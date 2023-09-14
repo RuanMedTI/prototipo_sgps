@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Locais</title>
+  <!-- Incluindo Bootstrap via CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Cadastro de Locais</h1>
+    <form id="localForm">
+      <input type="hidden" id="localId">
+      <div class="form-group">
+        <label for="name">Local:</label>
+        <input type="text" class="form-control" id="localName" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Endereço:</label>
+        <input type="text" class="form-control" id="address" required>
+      </div>
+      <div class="form-group">
+        <label for="cep">CEP:</label>
+        <input type="text" class="form-control" id="cep" required>
+      </div>
+      <div class="form-group">
+        <label for="city">Cidade:</label>
+        <input type="text" class="form-control" id="city" required>
+      </div>
+      <div class="form-group">
+        <label for="state">UF:</label>
+        <input type="text" class="form-control" id="state" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <button type="submit" id="voltarBtn" class="btn btn-danger">Voltar</button>
+    </form>
+    <div id="localList" class="mt-4"></div>
+  </div>
+
+  <!-- Incluindo jQuery e Bootstrap JS via CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scriptlocais.js"></script>
+</body>
+</html>
