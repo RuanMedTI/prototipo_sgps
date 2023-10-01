@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de Compromissos</title>
+  <title>Cadastro de Locais</title>
   <!-- Incluindo Bootstrap via CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container mt-5">
-    <h1>Cadastro de Compromissos</h1>
-    <form id="appointmentForm">
-      <input type="hidden" id="appointmentId">
+    <h1>Cadastro de Locais</h1>
+    <form id="localForm">
+      <input type="hidden" id="localId">
       <div class="form-group">
-        <label for="location">Local:</label>
-        <input type="text" class="form-control" id="location" required>
+        <label for="name">Local:</label>
+        <input type="text" class="form-control" id="localName" required>
       </div>
       <div class="form-group">
-        <label for="date">Data:</label>
-        <input type="date" class="form-control" id="date" required>
+        <label for="address">Endereço:</label>
+        <input type="text" class="form-control" id="address" required>
       </div>
       <div class="form-group">
-        <label for="volunteer">Voluntário Responsável:</label>
-        <input type="text" class="form-control" id="volunteer" required>
+        <label for="cep">CEP:</label>
+        <input type="text" class="form-control" id="cep" required>
       </div>
       <div class="form-group">
         <label for="city">Cidade:</label>
@@ -35,13 +35,13 @@
       <button type="submit" class="btn btn-primary">Salvar</button>
       <button type="submit" id="voltarBtn" class="btn btn-danger">Voltar</button>
     </form>
-    <div id="appointmentList" class="mt-4"></div>
+    <div id="localList" class="mt-4"></div>
   </div>
 
   <!-- Incluindo jQuery e Bootstrap JS via CDN -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="scriptcompromissos.js"></script>
+  <script src="../Scripts/scriptlocais.js"></script>
 </body>
 </html>

@@ -93,5 +93,5 @@ window.addEventListener('load', function () {
 const voltarBtn = document.getElementById('voltarBtn');
 
 voltarBtn.addEventListener('click', () => {
-  window.location.href = 'index.html';
+  window.location.href = '../Views/index.html';
 });

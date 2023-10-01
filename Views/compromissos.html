@@ -3,30 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de Parceiros</title>
+  <title>Cadastro de Compromissos</title>
   <!-- Incluindo Bootstrap via CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container mt-5">
-    <h1>Cadastro de Parceiros</h1>
-    <form id="partnerForm">
-      <input type="hidden" id="partnerId">
+    <h1>Cadastro de Compromissos</h1>
+    <form id="appointmentForm">
+      <input type="hidden" id="appointmentId">
       <div class="form-group">
-        <label for="name">Nome:</label>
-        <input type="text" class="form-control" id="name" required>
+        <label for="location">Local:</label>
+        <input type="text" class="form-control" id="location" required>
       </div>
       <div class="form-group">
-        <label for="cpfCnpj">CPF/CNPJ:</label>
-        <input type="text" class="form-control" id="cpfCnpj" required>
+        <label for="date">Data:</label>
+        <input type="date" class="form-control" id="date" required>
       </div>
       <div class="form-group">
-        <label for="address">Endereço:</label>
-        <input type="text" class="form-control" id="address" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">Telefone:</label>
-        <input type="tel" class="form-control" id="phone" required>
+        <label for="volunteer">Voluntário Responsável:</label>
+        <input type="text" class="form-control" id="volunteer" required>
       </div>
       <div class="form-group">
         <label for="city">Cidade:</label>
@@ -39,13 +35,13 @@
       <button type="submit" class="btn btn-primary">Salvar</button>
       <button type="submit" id="voltarBtn" class="btn btn-danger">Voltar</button>
     </form>
-    <div id="partnerList" class="mt-4"></div>
+    <div id="appointmentList" class="mt-4"></div>
   </div>
 
   <!-- Incluindo jQuery e Bootstrap JS via CDN -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="scriptparceiro.js"></script>
+  <script src="../Scripts/scriptcompromissos.js"></script>
 </body>
 </html>
