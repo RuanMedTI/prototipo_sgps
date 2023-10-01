@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Voluntários</title>
+  <!-- Incluindo Bootstrap via CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Cadastro de Voluntários</h1>
+    <form id="personForm">
+      <input type="hidden" id="personId">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Idade:</label>
+        <input type="number" class="form-control" id="age" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <button type="submit" id="voltarBtn" class="btn btn-danger">Voltar</button>
+    </form>
+    <div id="personList" class="mt-4"></div>
+  </div>
+
+  <!-- Incluindo jQuery e Bootstrap JS via CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../Scripts/scriptvoluntario.js"></script>
+</body>
+</html>
